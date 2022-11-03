@@ -34,7 +34,6 @@ class Game
         $playerOneTotal = $playerOneHand[0]->getValue() + $playerOneHand[1]->getValue();
         $playerTwoTotal = $playerTwoHand[0]->getValue() + $playerTwoHand[1]->getValue();
 
-
         if (($playerOneTotal > 21) && ($playerTwoTotal > 21)) {
             return 'Player one scored ' . $playerOneTotal. ' and player two scored ' . $playerTwoTotal . ' You both lose!';
         } elseif ($playerOneTotal > 21) {
