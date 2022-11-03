@@ -1,25 +1,5 @@
 <?php
-require_once 'Deck.php';
+require_once 'Game.php';
 
-$testDeck = new Deck();
-$deck = $testDeck->getDeck();
-
-echo '<pre>';
-print_r($deck);
-echo '</pre>';
-
-
-function shuffle($deck)
-{
-    return shuffle($deck);
-}
-
-function dealCards()
-{
-    
-}
-
-function playGame()
-{
-
-}
+$game = new Game;
+$game->playGame();
