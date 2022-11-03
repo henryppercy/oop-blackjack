@@ -1,6 +1,7 @@
 <?php
 require_once 'Game.php';
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
