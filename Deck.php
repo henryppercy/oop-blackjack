@@ -9,23 +9,28 @@ class Deck
     private array $deck = [];
 
     /**
+     * @return array
+     */
+    public function getDeck(): array
+    {
+        return $this->deck;
+    }
+
+    /**
      *
      */
     public function __construct()
     {
-        foreach ($this->faces as $face) {
-            foreach ($this->suits as $suit) {
+        foreach ($this->suits as $suit) {
+            foreach ($this->faces as $face) {
                 if ($face == 'Ace') {
                     $value = 11;
-                } elseif ($face == 'King' || 'Queen' || 'Jack' || 10){
+                } elseif ($face == 'King' || $face == 'Queen' || $face == 'Jack' || $face == 10){
                     $value = 10;
                 } else {
-                    if (is_numeric($face)) {
-                        $value = $face;
-                    }
+                    $value = $face;
                 }
                 $card = new Card($suit, $face, $value);
-
                 $this->deck[] = $card;
             }
         }
