@@ -1,5 +1,5 @@
 <?php
-require_once 'Game.php';
+require_once 'classes/Game.php';
 ?>
 
 <!DOCTYPE html>
