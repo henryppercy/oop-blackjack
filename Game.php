@@ -4,7 +4,7 @@ require_once 'Player.php';
 
 class Game
 {
-    public function playGame()
+    public function playGame(): string
     {
         $newDeck = new Deck();
         $deck = $newDeck->getDeck();
