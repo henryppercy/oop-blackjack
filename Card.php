@@ -19,11 +19,26 @@ class Card
     }
 
     /**
+     * @return string
+     */
+    public function getSuit(): string
+    {
+        return $this->suit;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFace(): string
+    {
+        return $this->face;
+    }
+
+    /**
      * @return int
      */
     public function getValue(): int
     {
         return $this->value;
     }
-
 }
