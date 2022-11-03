@@ -2,4 +2,5 @@
 require_once 'Game.php';
 
 $game = new Game;
-$game->playGame();
+
+echo $game->playGame();
