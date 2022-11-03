@@ -5,20 +5,8 @@ class Deck
 {
     private array $suits = ['Diamonds', 'Clubs', 'Hearts', 'Spades'];
     private array $faces = [2 ,3, 4, 5, 6, 7, 8, 9, 10, 'Jack', 'Queen', 'King', 'Ace'];
-
     private array $deck = [];
 
-    /**
-     * @return array
-     */
-    public function getDeck(): array
-    {
-        return $this->deck;
-    }
-
-    /**
-     *
-     */
     public function __construct()
     {
         foreach ($this->suits as $suit) {
@@ -34,5 +22,13 @@ class Deck
                 $this->deck[] = $card;
             }
         }
+    }
+
+    /**
+     * @return array
+     */
+    public function getDeck(): array
+    {
+        return $this->deck;
     }
 }
