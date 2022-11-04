@@ -35,12 +35,21 @@ h1 {
 .card {
     color: #1C6758;
     background-color: #EEF2E6;
-    padding: 1rem 3rem;
+    padding: 1rem 1rem;
     border-radius: 0.2rem;
+
+    box-shadow: #00000010 0px 10px 36px 0px, #00000010 0px 0px 0px 1px;}
+
+.player {
+    padding: 2rem;
 }
 
 .total {
-    margin: 0 5rem 3rem;
+    margin: 0 15rem 3rem;
+}
+
+.red {
+    color: #CF0A0A;
 }
 
 

@@ -14,17 +14,17 @@ require_once 'classes/Game.php';
 </head>
 <body>
     <header>
-        <h1>♠♥ Welcome to Blackjack ♦♣</h1>
+        <h1>♠<span class="red">♥</span> Welcome to Blackjack ♣<span class="red">♦</span></h1>
     </header>
     <main>
         <section class="players">
-            <div class="card player-one">
+            <div class="card player">
                 <h2>Player One</h2>
                 <p>Ten of Clubs</p>
                 <p>Jack of Diamonds</p>
                 <p>Score: 21</p>
             </div>
-            <div class="card player-two">
+            <div class="card player">
                 <h2>Player Two</h2>
                 <p>Ace of Spades</p>
                 <p>Three of Hearts</p>
